@@ -165,10 +165,6 @@ stu-goblin-jump/
 │   ├── goblin.png
 │   ├── background_1.png
 │   └── platform_1.png
-├── .vscode/
-│   ├── tasks.json
-│   ├── launch.json
-│   └── c_cpp_properties.json
 ├── main.cpp
 ├── makefile
 └── README.md
