@@ -1,4 +1,4 @@
-# Goblin Jump
+# Goblin Jump!
 
 Um jogo simples de plataforma feito em C++ utilizando [SFML 3.0.0](https://www.sfml-dev.org/) e compilado com MinGW-w64 via MSYS2.
 
