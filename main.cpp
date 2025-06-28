@@ -14,7 +14,7 @@ int main()
 {
     srand(time(0));
 
-    RenderWindow app(sf::VideoMode({400, 533}), "Goblin Game!");
+    RenderWindow app(sf::VideoMode({540, 540}), "Goblin Game!");
     app.setFramerateLimit(60);
 
     Texture tx_player, tx_bg, tx_plat;
@@ -32,17 +32,17 @@ int main()
 
     Sprite sBackground(tx_bg), sPlatform(tx_plat), sPlayer(tx_player);
     
-    sBackground.setScale(Vector2f(3.0f , 3.0f));
+    sBackground.setScale(Vector2f(3.0 , 3.0));
 
     // Platform Creator
     point plat[20];
     for (int i = 0; i < 10; i++) {
-        plat[i].x = rand()%400;
-        plat[i].y = rand()%533;
+        plat[i].x = rand()%540;
+        plat[i].y = rand()%540;
     }
 
     // Player Coords and Direction Vector
-    int x = 100, y = 533, h = 200;
+    int x = 100, y = 540, h = 200;
     float dir_x = 0, dir_y = 0;
 
     // Game Loop: Renderize sprites,
@@ -66,9 +66,9 @@ int main()
             for (int i = 0; i < 10; i++) {
                 y = h;
                 plat[i].y = plat[i].y - dir_y;
-                if (plat[i].y > 533) {
+                if (plat[i].y > 540) {
                     plat[i].y = 0;
-                    plat[i].x = rand()%400;
+                    plat[i].x = rand()%540;
                 }
             }
         }
